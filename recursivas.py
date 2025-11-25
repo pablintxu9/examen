@@ -18,4 +18,10 @@ lista_b=[2,6]
 for i in lista_a:
     if i in lista_b:
         print(i,"esta en las dos listas")
+
+def exponente(base,exp):
+    if exp==0:
+        print(1)
+    else:
+        print(base*exponente(base,exp-1))
     
