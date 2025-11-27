@@ -9,23 +9,22 @@ class personaje:
         print("Elija qué atributo desea subir de nivel:")
         a = int(input("1. vida\n2. aguante\n3. inteligencia\n> "))
         if a == 1:
-           self.vida += 10
+            self.vida += 10
         elif a == 2:
-           self.aguante += 10
+            self.aguante += 10
         elif a == 3:
-           self.inteligencia += 10
+            self.inteligencia += 10
         else:
-           print("Opción no válida")
-     def morir(self, vida):
-               if vida <=0:
-             print("El personaje ha muerto")
-    def turno(True):
-         if True:
-             print("Es tu turno")
-             
-             
-    
- class guerrero(personaje):
+            print("Opción no válida")
+    def morir(self, vida):
+        if vida <= 0:
+            print("El personaje ha muerto")
+    def turno(self):
+        if True:
+            print("Es tu turno")
+
+
+class guerrero(personaje):
     def __init__(self, vida, aguante, inteligencia, fuerza):
         super().__init__(vida, aguante, inteligencia)
         self.fuerza = fuerza
