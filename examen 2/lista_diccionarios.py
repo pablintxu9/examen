@@ -5,9 +5,9 @@ empleados = [
 ] 
 
 def calcular_gasto_departamento(departamentos,depto): 
-    total = 0 
-    for empleado in departamentos: 
-        if empleado["departamento"] == depto: 
-            total += empleado["salario"] 
-    return total
-print(calcular_gasto_departamento(empleados, "IT"))
+    gasto=0
+    for empleado in departamentos:
+        if empleado["departamento"]==depto:
+            gasto+=empleado["salario"]
+    return gasto
+print(calcular_gasto_departamento(empleados,"Ventas"))  # Output: 2900

@@ -16,12 +16,15 @@ class personaje:
            self.inteligencia += 10
         else:
            print("Opción no válida")
+   def ataque(self):
+         if turno == True
     
- 
-    
-
-guerrero=personaje(100,80,30)
-mago=personaje(70,50,100)
-print(guerrero)
-mago.subir_nivel()
-print(mago)
+ class guerrero(personaje):
+    def __init__(self, vida, aguante, inteligencia, fuerza):
+        super().__init__(vida, aguante, inteligencia)
+        self.fuerza = fuerza
+    def __str__(self):
+        return super().__str__() + f"\nfuerza: {self.fuerza}"
+    def subir_nivel(self):
+        super().subir_nivel()
+        self.fuerza += 5

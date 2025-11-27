@@ -11,4 +11,4 @@ def total_ventas_por_region(ventas, region):
         if venta["region"] == region:
             total += venta["importe"]
     return total
-print (total_ventas_por_region(ventas, "Europa"))  # Output: 300
+print (total_ventas_por_region(ventas, "Europa"))  
