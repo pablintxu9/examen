@@ -16,8 +16,14 @@ class personaje:
            self.inteligencia += 10
         else:
            print("Opción no válida")
-   def ataque(self):
-         if turno == True
+     def morir(self, vida):
+               if vida <=0:
+             print("El personaje ha muerto")
+    def turno(True):
+         if True:
+             print("Es tu turno")
+             
+             
     
  class guerrero(personaje):
     def __init__(self, vida, aguante, inteligencia, fuerza):

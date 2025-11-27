@@ -1,1 +1,1 @@
-import numpy as np
+print(list(range(5, 0, -1)))
