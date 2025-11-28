@@ -4,10 +4,10 @@ import matplotlib.pyplot as ptl
 prof = [] 
 temp = [] 
 
-with open("mues_marias.csv") as archivo:
+with open("mues_marinas.csv") as archivo:
     for linea in archivo:
         try:
-            datos = linea.split()
+            datos = linea.split(",")
             prof.append(float(datos[0]))
             temp.append(float(datos[1]))
         except ValueError:
@@ -16,7 +16,8 @@ with open("mues_marias.csv") as archivo:
 
 prof = np.array(prof)
 temp = np.array(temp)
-print(np.median(temp))
+print(np.mean(temp))
 print(np.array(temp)<20)
 
 ptl.scatter(temp, prof)
+ptl.show()

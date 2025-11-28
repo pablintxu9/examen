@@ -1,7 +1,8 @@
-class cuenta(self, titular, iban, saldo=0.0):
-    self.titular=titular
-    self.iban=iban
-    self.saldo=saldo
+class cuenta():
+    def __init__(self, titular, iban, saldo=0):
+        self.titular=titular
+        self.iban=iban
+        self.saldo=saldo
 
     def ingresar(self, saldo):
         super().__init__(saldo)
@@ -15,8 +16,9 @@ class cuenta(self, titular, iban, saldo=0.0):
     def __str__ (self):
         return f"Titular: {self.titular} IBAN: {self.iban} Saldo: {self.saldo}€"
 
-class banco(self, cuentas):
-    self.cuentas=[cuenta]
+class banco(cuenta):
+    def __init__(self, cuenta): 
+        self.cuentas=[cuenta]
     def agregar_cuenta(self, cuenta):
         self.cuentas.append(cuenta)
     def buscar_cuenta(self, iban):
@@ -28,8 +30,9 @@ class banco(self, cuentas):
     def realizar_tranferencia(self, iban1, iban2, cantidad):
         cuenta1 = self.buscar_cuenta(iban1)
         cuenta2 = self.buscar_cuenta(iban2)
+
         if cuenta1 and cuenta2:
-            if cuenta1.saldo>=cantidad
+            if cuenta1.saldo>=cantidad:
                 cuenta1.retirar(cantidad)
                 cuenta2.ingresar(cantidad)
             else:
