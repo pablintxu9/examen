@@ -40,7 +40,7 @@ def arbol(n):
         for j in range(2*i+1):
             print("*", end="")
         print()
-arbol(5)
+arbol(7)
     
 #palindromos
 def palindromo(p):
@@ -102,3 +102,12 @@ def factorial(n):
         return 1
     return n*factorial(n-1)
 
+def perfecto(n):
+    suma=0
+    for i in range(1,n):
+        if n%i==0:
+            suma+=i
+    if suma==n:
+        return True
+    return False
+print(perfecto(28))
