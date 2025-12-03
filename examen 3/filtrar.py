@@ -3,8 +3,7 @@ def filtrar_palabras(lista, letra):
     for palabra in lista:
         if palabra.startswith(letra):
             filtro.append(palabra)
+            return filtro
         else:
-            return "ninguna palabra encontrada"
-    return filtro
-
-print(filtrar_palabras(["manzana","banana","mandarina","pera","melon"],"m"))
+            return "palabra no encontrada"
+print(filtrar_palabras(["mango", "pera","manzana"], "p"))
