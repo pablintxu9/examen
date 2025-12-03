@@ -7,4 +7,4 @@ def filtrar_palabras(lista, letra):
             return "ninguna palabra encontrada"
     return filtro
 
-print(filtrar_palabras(["manzana","banana","mandarina","pera","melon"],"ñ"))
+print(filtrar_palabras(["manzana","banana","mandarina","pera","melon"],"m"))

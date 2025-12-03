@@ -111,3 +111,17 @@ def perfecto(n):
         return True
     return False
 print(perfecto(28))
+
+
+#arbol
+n=5
+def arbol(n):
+    for i in range(1,n-1):
+        for j in range(i):
+            print("*",end="")
+        print()
+        
+
+
+            
+
