@@ -12,7 +12,7 @@ with open("mues_marinas.csv") as archivo:
             temp.append(float(datos[1]))
         except ValueError:
             print ("Dato no valido, se omite la linea")
-            continue
+            continue7
 
 prof = np.array(prof)
 temp = np.array(temp)
