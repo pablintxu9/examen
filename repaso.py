@@ -3,5 +3,3 @@ def arbol(n):
         for j in range(i):
             print("*", end="")
         print()
-
-arbol(5)
