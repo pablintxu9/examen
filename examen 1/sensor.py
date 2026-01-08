@@ -1,7 +1,7 @@
 def mayor(lista):
-    mayor=lista[0]
-    for num in lista:
-        if num>=0:
-            mayor=num
-    return print(mayor)
-mayor([1,2,14,3,5,8])
+    maximo = lista[0]
+    for numero in lista:
+        if numero > maximo:
+            maximo = numero
+    return maximo
+print(mayor([3, 12, 2, 8, 1]))

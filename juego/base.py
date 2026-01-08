@@ -45,3 +45,4 @@ class personaje(turno):
     def morir(self, vida):
         if vida <= 0:
             print("El personaje ha muerto")
+            
