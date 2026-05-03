@@ -21,7 +21,7 @@ class personaje(turno):
             defensa = int("si o no")
             if defensa == "si":
                escudo -=1
-               print("tequedan ", escudo)
+               print("te quedan ", escudo)
 
 
     def elegir_clase():
@@ -45,4 +45,7 @@ class personaje(turno):
     def morir(self, vida):
         if vida <= 0:
             print("El personaje ha muerto")
+            print(input("puede elegir otra clase:"))
+            return personaje
+            
             
